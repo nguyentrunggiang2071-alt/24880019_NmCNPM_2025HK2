@@ -1,0 +1,25 @@
+Nội dung báo cáo đồ án nên có
+
+1. Giới thiệu đề tài: tên đề tài, lý do chọn, mục tiêu, đối tượng sử dụng.
+2. Khảo sát bài toán: vấn đề thực tế, nhu cầu theo dõi bài mới, khó khăn hiện tại.
+3. Yêu cầu chức năng: liệt kê và mô tả từng chức năng.
+4. Yêu cầu phi chức năng: dễ dùng, phản hồi nhanh, dữ liệu an toàn, dễ mở rộng.
+5. Use Case diagram và mô tả Use Case chính.
+6. Sơ đồ lớp mức phân tích.
+7. Sơ đồ trạng thái cho đối tượng có vòng đời rõ như Article hoặc Notification nếu phù hợp.
+8. Kiến trúc hệ thống và lý do chọn kiến trúc.
+9. Thiết kế cơ sở dữ liệu.
+10. Thiết kế giao diện/màn hình chính.
+11. Cài đặt: công nghệ, cấu trúc source code, module chính.
+12. Kiểm thử: test case, kết quả, lỗi đã xử lý.
+13. Kết quả đạt được, hạn chế, hướng phát triển.
+
+Câu hỏi Ý trả lời nên chuẩn bị
+Vì sao chọn đề tài này? Nêu vấn đề có nhiều bài mới, người dùng khó theo dõi, hệ thống giúp tóm tắt và cá nhân hóa.
+Hệ thống có những actor nào? Người dùng chưa đăng nhập, người dùng đã đăng nhập, quản trị viên, nguồn bài/API, dịch vụ AI.
+Chức năng quan trọng nhất là gì? Theo dõi chủ đề, lấy bài mới, tóm tắt/hiển thị ý chính, lưu yêu thích.
+Kiến trúc của nhóm là gì? Monolithic tổ chức theo layer; UI gọi Service, Service gọi Repository/API, Repository làm việc với DB.
+Vì sao không dùng Microservices? Đồ án quy mô nhỏ, nhóm nhỏ, cần triển khai nhanh; microservices phức tạp và tốn chi phí vận hành.
+AI được dùng ở đâu? Tóm tắt, dịch, rút ý chính, gợi ý bài liên quan nếu nhóm có làm.
+Nếu sửa chức năng tìm kiếm thì sửa ở đâu? Chỉ rõ service/repository/component liên quan trong source code.
+Làm sao kiểm thử? Nêu test case: đăng nhập sai/đúng, thêm chủ đề, tìm bài, lưu yêu thích, xem chi tiết, tóm tắt.

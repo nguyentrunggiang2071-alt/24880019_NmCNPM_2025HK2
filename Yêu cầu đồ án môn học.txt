@@ -1,0 +1,95 @@
+Đồ án: Hệ thống Tự động Tổng hợp và Gợi ý Bài báo Khoa học (Research Paper Aggregator)
+
+Tài liệu này định nghĩa phạm vi, chức năng và yêu cầu kỹ thuật cho đồ án hệ thống theo dõi và tóm tắt bài báo khoa học tự động.
+
+1. Phân cấp chức năng hệ thống
+
+1.1. Chức năng cơ bản (Yêu cầu cốt lõi (Core Features))
+
+Quản lý tài khoản (Authentication):
+
+Hệ thống đăng ký, đăng nhập, đăng xuất.
+
+Quản lý thông tin hồ sơ cá nhân của người dùng.
+
+Quản lý chủ đề (Topic Management):
+
+Cho phép người dùng tạo, chỉnh sửa, xóa các chủ đề hoặc từ khóa quan tâm (ví dụ: AI, Machine Learning, Stock Prediction).
+
+Thu thập dữ liệu (Data Ingestion):
+
+Tự động thu thập bài báo mới từ arXiv, RSS feeds hoặc các nguồn API học thuật uy tín.
+
+Tóm tắt bằng AI (AI Summarization):
+
+Tích hợp API (ví dụ: OpenAI) để tạo bản tóm tắt ngắn gọn các ý chính từ phần Abstract của bài báo.
+
+Tìm kiếm và Hiển thị (Discovery & Search):
+
+Hiển thị danh sách bài báo mới nhất.
+
+Hỗ trợ tìm kiếm theo từ khóa.
+
+Bộ lọc bài báo theo chủ đề hoặc ngày công bố.
+
+Quản lý trải nghiệm (Detail & Interaction):
+
+Xem chi tiết bài báo kèm liên kết nguồn gốc.
+
+Chức năng lưu bài báo vào danh sách yêu thích để đọc lại sau.
+
+1.2. Chức năng nâng cao (Yêu cầu mở rộng (Optional/Advanced Features))
+
+Gợi ý thông minh (Recommender System): Đề xuất bài báo liên quan dựa trên lịch sử đọc.
+
+Phát hiện trùng lặp (Deduplication): Tự động nhận diện và loại bỏ bài báo trùng lặp.
+
+Thông báo (Notifications): Gửi cảnh báo/thông báo khi có bài báo mới thuộc danh mục theo dõi.
+
+Thống kê xu hướng (Trend Analytics): Phân tích và biểu diễn sự thay đổi của các chủ đề theo thời gian.
+
+Đánh giá chất lượng (Quality Scoring): Chấm điểm độ "đáng đọc" (relevance/novelty) của bài báo.
+
+Cá nhân hóa (Personalization): Thay đổi giao diện trang chủ dựa trên hành vi người dùng.
+
+2. Yêu cầu kỹ thuật và kết quả mong muốn
+
+2.1. Yêu cầu về sản phẩm (End-product)
+
+Tính khả dụng: Sản phẩm chạy được trên môi trường Local hoặc online.
+
+Mã nguồn: Cấu trúc phân lớp (Layered Architecture), tuân thủ nguyên lý thiết kế (SOLID).
+
+Hồ sơ báo cáo:
+
+Sơ đồ Use Case, Sơ đồ lớp (Class Diagram).
+
+Sơ đồ tuần tự (Sequence Diagram).
+
+Sơ đồ kiến trúc hệ thống.
+
+Sơ đồ trạng thái.
+
+Thiết kế database trên Supabase.
+
+Năng lực hệ thống: Nhóm có khả năng giải thích chi tiết mã nguồn và sửa đổi module khi cần thiết.
+
+2.2. Gợi ý thiết kế database (Supabase)
+
+Để đảm bảo tính mạch lạc, cần tập trung thiết kế các bảng cốt lõi và cấu hình RLS (Row Level Security) để bảo mật dữ liệu:
+
+users: Thông tin người dùng.
+
+topics: Danh mục chủ đề/từ khóa.
+
+articles: Thông tin các bài báo được thu thập.
+
+summaries: Lưu trữ tóm tắt do AI tạo.
+
+favorites: Mối quan hệ giữa người dùng và bài báo yêu thích.
+
+3. Mục tiêu cuối cùng
+
+Đối với người dùng: Cập nhật nhanh chóng, tiết kiệm thời gian đọc qua tóm tắt AI, tìm thấy nghiên cứu phù hợp.
+
+Đối với đồ án: Hoàn thiện sản phẩm phần mềm chất lượng, tài liệu phân tích bài bản và đảm bảo tính sẵn sàng trong quá trình phản biện.

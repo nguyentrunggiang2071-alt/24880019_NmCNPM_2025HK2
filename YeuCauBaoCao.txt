@@ -1,0 +1,101 @@
+Đồ án này chỉ có 1 người làm đó là tôi
+
+02_Checklist 
+Chức năng	Mô tả cần đạt
+Đăng ký, đăng nhập	Có tài khoản người dùng; đăng ký, đăng nhập, đăng xuất; xử lý lỗi cơ bản.
+Thêm/sửa/xóa chủ đề theo dõi	Người dùng thêm, sửa, xóa topic như AI, ML, stock prediction, AI Agents.
+Tự động lấy paper mới theo chủ đề	Kết nối nguồn như arXiv; truy vấn theo keyword/topic; có cơ chế cập nhật định kỳ hoặc nút refresh.
+Lưu thông tin paper	Lưu tiêu đề, abstract, tác giả, ngày công bố, link, topic liên quan.
+Tóm tắt ngắn từ abstract	Sinh bản tóm tắt ngắn, dễ đọc từ abstract; có thể dùng rule/simple NLP/LLM API.
+Hiển thị danh sách paper mới	Giao diện list paper theo thời gian/topic; hiển thị thông tin quan trọng.
+Tìm kiếm/lọc paper	Tìm theo từ khóa, lọc theo topic/ngày/tác giả hoặc trạng thái yêu thích.
+Xem chi tiết paper	Trang chi tiết có title, abstract, summary, author, date, source link.
+Lưu paper yêu thích	Người dùng đánh dấu/bỏ đánh dấu paper yêu thích và xem lại danh sách.
+Gợi ý paper liên quan	Gợi ý paper cùng topic/từ khóa/tác giả hoặc embedding đơn giản.
+Phát hiện paper trùng/gần giống	Phát hiện trùng title/link hoặc gần giống theo title/abstract.
+Thông báo khi có paper mới	Thông báo trong app/email hoặc badge khi topic có paper mới.
+Thống kê xu hướng theo chủ đề	Biểu đồ số paper theo topic/ngày; top keyword/topic.
+Chấm điểm paper đáng đọc	Score theo độ mới, keyword match, venue/nguồn, số lần xuất hiện, hoặc rule nhóm định nghĩa.
+
+Câu hỏi demo GV có thể hỏi
+Em mô tả luồng xác thực và cách lưu phiên/token?
+Dữ liệu topic gắn với user như thế nào?
+Hệ thống gọi arXiv như thế nào và tránh lấy lặp ra sao?
+Thiết kế bảng/collection Paper gồm các trường nào?
+Tóm tắt tạo lúc nào, lưu ở đâu, lỗi API xử lý sao?
+Giao diện ưu tiên paper mới như thế nào?
+Search chạy phía frontend hay backend? Vì sao?
+Từ danh sách sang trang chi tiết truyền dữ liệu như thế nào?
+Favorite lưu theo user-paper như thế nào?
+Logic gợi ý paper liên quan dựa trên tiêu chí nào?
+Hệ thống xử lý paper trùng title nhưng khác link ra sao?
+Lúc nào gửi thông báo và tránh spam như thế nào?
+Dữ liệu thống kê lấy từ bảng nào?
+Công thức score paper đáng đọc là gì?
+
+
+Câu hỏi 2 phụ checklist
+Em mô tả luồng xác thực và cách lưu phiên/token?
+Dữ liệu topic gắn với user như thế nào?
+Hệ thống gọi arXiv như thế nào và tránh lấy lặp ra sao?
+Thiết kế bảng/collection Paper gồm các trường nào?
+Tóm tắt tạo lúc nào, lưu ở đâu, lỗi API xử lý sao?
+Giao diện ưu tiên paper mới như thế nào?
+Search chạy phía frontend hay backend? Vì sao?
+Từ danh sách sang trang chi tiết truyền dữ liệu như thế nào?
+Favorite lưu theo user-paper như thế nào?
+Logic gợi ý paper liên quan dựa trên tiêu chí nào?
+Hệ thống xử lý paper trùng title nhưng khác link ra sao?
+Lúc nào gửi thông báo và tránh spam như thế nào?
+Dữ liệu thống kê lấy từ bảng nào?
+Công thức score paper đáng đọc là gì?
+
+Câu 03_Task 
+Trả lời câu hỏi Độ khó 1-5, % hoàn thành, Số giờ ước tính, Sản phẩm/đầu ra, Chất lượng 1-5
+
+Viết user stories, luồng sử dụng chính và tiêu chí hoàn thành.
+Thiết kế wireframe hoặc mô tả màn hình: login, topics, paper list, paper detail, favorite.
+Thiết kế database/schema cho User, Topic, Paper, Favorite, PaperTopic.
+API đăng ký, đăng nhập, đăng xuất, kiểm tra user hiện tại.
+Giao diện đăng ký, đăng nhập, trạng thái lỗi/loading.
+API thêm/sửa/xóa/lấy danh sách topic theo user.
+Giao diện quản lý topic: thêm, sửa, xóa, hiển thị danh sách.
+Kết nối arXiv hoặc nguồn paper, tìm paper theo keyword/topic.
+Cơ chế cập nhật paper mới: cron/job/refresh thủ công; xử lý lỗi mạng/API.
+Lưu metadata paper: title, abstract, authors, published date, link, source, topic.
+Tạo tóm tắt ngắn từ abstract; xử lý abstract dài/rỗng/lỗi API.
+API danh sách paper mới, phân trang/sắp xếp theo ngày.
+Giao diện danh sách paper mới, hiển thị title/summary/date/topic/link.
+API tìm kiếm/lọc paper theo keyword/topic/date/favorite.
+Giao diện ô tìm kiếm, bộ lọc, hiển thị kết quả rõ ràng.
+API xem chi tiết một paper.
+Trang chi tiết paper: abstract, summary, author, date, link nguồn.
+API lưu/bỏ lưu paper yêu thích theo user.
+Nút favorite và trang/danh sách paper yêu thích.
+Gợi ý paper liên quan theo topic/keyword/similarity đơn giản.
+Phát hiện paper trùng hoặc gần giống.
+Thông báo khi có paper mới.
+Thống kê xu hướng theo chủ đề bằng bảng/biểu đồ.
+Chấm điểm paper đáng đọc theo rule nhóm định nghĩa.
+Test các chức năng chính; ghi bug và cách sửa.
+Deploy web/app hoặc chuẩn bị script chạy demo.
+Viết README hướng dẫn cài đặt, chạy, cấu hình API/key nếu có.
+
+
+
+câu 07 vấn đáp
+Hệ thống giải quyết vấn đề gì, người dùng thao tác như thế nào?
+Nhóm xác định chức năng cơ bản và nâng cao ra sao?
+Frontend, backend, database, crawler/summary kết nối với nhau như thế nào?
+Vì sao thiết kế các bảng/collection như hiện tại?
+Luồng đăng ký/đăng nhập/token/session hoạt động ra sao?
+Topic gắn với user như thế nào? Nếu xóa topic thì paper liên quan xử lý sao?
+Query topic lên arXiv thế nào? Làm sao biết paper mới?
+Hệ thống phát hiện paper trùng bằng title/link/abstract ra sao?
+Tóm tắt tạo bằng cách nào? Có lưu lại không? Có kiểm soát lỗi không?
+Tìm kiếm/lọc chạy ở frontend hay backend? Vì sao?
+Favorite là quan hệ giữa user và paper hay trường trong paper?
+Nhóm đã làm nâng cao nào và điểm khác biệt là gì?
+Nhóm đã test những case nào? Có bug nào đáng chú ý đã sửa?
+Nếu chạy lại từ đầu thì cần cài gì, lệnh gì, cấu hình gì?
+Ai làm phần nào? Bằng chứng đâu? Ai có thể giải thích sâu?
